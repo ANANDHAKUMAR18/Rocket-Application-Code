@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:  
+  name: rocket-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rocket
+  template:
+    metadata:
+      labels:
+        app: rocket
+    spec:
+      container:
+        -  name: anand-container
+           image: anandhakumarg/rocket-image
+           ports:
+             -  containerPort: 80
+  
