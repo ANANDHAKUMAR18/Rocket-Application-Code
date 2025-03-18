@@ -12,7 +12,7 @@ spec:
       labels:
         app: rocket
     spec:
-      container:
+      containers:
         -  name: anand-container
            image: anandhakumarg/rocket-image
            ports:
