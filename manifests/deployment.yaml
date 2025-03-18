@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         -  name: anand-container
-           image: anandhakumarg/rocket-image
+           image: anandhakumarg/rocket-image:9
            ports:
              -  containerPort: 80
            imagePullSecrets:
