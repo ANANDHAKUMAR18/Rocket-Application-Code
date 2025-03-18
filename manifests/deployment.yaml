@@ -17,4 +17,7 @@ spec:
            image: anandhakumarg/rocket-image
            ports:
              -  containerPort: 80
+          imagePullSecrets:
+            - name: docker-registry
+          
   
